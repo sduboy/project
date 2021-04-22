@@ -1,0 +1,656 @@
+.header{
+    position: fixed;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    background-color: darkslategray;
+    z-index: 100;
+    /* margin-top: -25px; */
+}
+#notmylogo{
+    position: absolute;
+    left: 50px;
+    width: 45px;
+    height: 55px;
+    cursor: pointer;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    width: 500px;
+    margin: 10px 200px;
+    color: aliceblue;
+}
+.nav div{
+    cursor: pointer;
+}
+#statement{
+    position: relative;
+    font-size: 80px;
+    line-height: 90px;
+    width: 600px;
+    top: 100px;
+    left: 100px;
+    color: white;
+    font-family: Nunito, sans-serif;
+}
+.searching{
+    margin: 170px 100px;
+    display: flex;
+}
+#search{
+    position: relative;
+    width: 400px;
+    max-width: 500px;    
+    height: 50px;
+    border-radius: 20px;
+    outline: none;
+}
+#searchbutton{
+    position: relative;       
+    border-radius: 20px;
+    height: 48px;
+    width: 100px;
+    outline: none;
+    margin: 1px 0px 1px -100px;
+    border: 2px solid black;
+    background-color: aqua;
+}
+.header button{
+    color: aliceblue;
+    font-size: 18px;
+    border: 2px solid white;
+}
+.header button:hover{
+    color: aliceblue; 
+    text-decoration: none;
+}
+
+#cart-icon{ 
+    position: relative;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+    margin: 10px auto;
+}
+
+.logregbuttons{
+    display: flex;
+    width: auto;
+    position: relative;
+    right: 0;
+    margin: 5px 30px;
+    color: aliceblue;
+    font-size: 25px;
+}
+#user-icon{
+    opacity: 0;
+    width: 40px;
+}
+.main{
+    min-height: 600px;
+    width: 100%;
+    background-image: url(/img/somedude.jpg);
+    background-size: cover;
+} 
+
+.popupcart{
+    position: absolute;
+    top: 100px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+}
+.popupcart-content{
+    background-color: white;
+    height: 500px;
+    width: 600px;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.cart-header span{
+    font-size: 30px;
+}
+.cart-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.cart-price{
+    font-size: 25px;
+    width: 100px;
+    align-items: center;
+    margin: 10px auto;
+}
+.cart-item{
+    width: 300px;
+    display: flex;
+}
+.cart-item span{
+    font-size: 20px;
+    margin: 13px auto;
+}
+.cart-row button{
+    margin: 10px auto;
+}
+
+#closecart-button{
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+.popuplog{
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.popuplog-content{
+    background-color: rgb(211, 211, 211);
+    color: black;
+    height: 350px;
+    width: 450px;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    border-radius: 1%;
+
+}
+.popuplog-content input{
+    display: block;
+    margin: 30px auto 0px;
+    width: 70%;
+    padding: 8px;
+    border-radius: 20px;
+    border: 3px solid  rgb(46, 0, 88);
+}
+.popuplog-content input:focus{
+    outline: none;
+    border: 4px solid  rgb(144, 255, 237);
+}
+.popuplog-content button{
+    margin-top: 40px;
+    width: 100px;
+    border-radius: 20px;
+}
+#closelog-button{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+.popupsign{
+    position: absolute;
+    top: 0px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.popupsign-content{
+    background-color: #fff;
+    color: black;
+    height: 500px;
+    width: 600px;
+    position: relative;
+    padding: 10px;
+    text-align: center; 
+    border-radius: 1%; 
+}
+.popupsign-content input{
+    display: block;
+    margin: 20px auto;
+    width: 70%;
+    padding: 8px;
+    border-radius: 20px;
+    border: 3px solid  rgb(46, 0, 88);
+}
+.popupsign-content input:focus{
+    outline: none;
+    border: 4px solid  rgb(144, 255, 237);
+}
+.popupsign-content button{
+    width: 100px;
+    border-radius: 20px;
+}
+
+.checkbox a{
+    color: aliceblue;
+}
+.checkbox a:hover{
+    color: aliceblue;
+}
+
+#closesign-button{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+#profile_img{
+    margin-right: 5px;
+    max-width:40px;
+    display: none;
+    border-radius: 50%;
+  }
+ #profile_img input[type=file]{
+  padding:10px;
+  background:#2d2d2d;}
+
+
+.popupcontact{
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.popupcontact-content{
+    color: black;
+    height: 350px;
+    width: 450px;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+.popupcontact-content input{
+    display: block;
+    margin: 30px auto 0px;
+    width: 70%;
+    height: 100px;
+    padding: 8px;
+    border-radius: 20px;
+    border: 3px solid  rgb(46, 0, 88);
+}
+.popupcontact-content input:focus{
+    outline: none;
+    border: 4px solid  rgb(144, 255, 237);
+}
+.popupcontact-content button{
+    margin-top: 40px;
+    width: 100px;
+    border-radius: 20px;
+}
+#closecontact-button{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+
+
+.about{
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: bisque;
+}
+
+.about-us h1{
+    font-size: 60px;
+    color: rgb(0, 255, 213);
+    margin: 20px 20px;
+}
+.about-us h3{
+    max-width: 700px;
+    padding: 20px 20px;
+}
+
+
+.about-image img{
+    width: 600px;
+    margin: 50px 10px;
+}
+
+
+.courses{
+    width: 100%;
+}
+.popular-courses{
+    background-color: azure;
+    width: 100%;
+    text-align: center;
+    height: 100px;
+    font-size: 50px;
+}
+.pc-cards{
+    background-color: azure;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pc-cards > div{
+    background-color: rgba(255, 255, 255, 0.863);
+    width: 250px;
+    height: 350px;
+    margin: 20px 20px;
+    border: 1px solid black;
+}
+.pc-cards img{
+    width: 248px;
+    height: 140px;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+.pc-cards h4{
+    margin: 3px 10px;
+}
+.ratings{
+    display: flex;
+}
+.ratings h5{
+    font-size: 13px;
+    margin: 8px 3px 0px 10px;
+}
+:root {
+    --star-size: 20px;
+    --star-color: #fff;
+    --star-background: #fc0;
+  }
+.Stars {
+    --percent: calc(var(--rating) / 5 * 100%);
+    margin: 5px 5px;
+    display: inline-block;
+    font-size: var(--star-size);
+    font-family: Times;
+    line-height: 1;
+  }
+.Stars::before {
+    content: '★★★★★';
+    letter-spacing: 0px;
+    background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+    -webkit-background-clip: text;
+    background-clip: none;
+    -webkit-text-fill-color: transparent;
+}
+.numofrates{
+    margin: 3px 0px;
+    color: grey;
+}
+.price{
+    display: flex;
+    margin-left: 10px;
+}
+.current-price{
+    font-size: 25px;
+}
+.prev-price{
+    margin: 2px 5px;
+    color: rgb(88, 88, 88);
+    font-size: 18px;
+}
+.addtocard{
+    background-color: rgb(0, 195, 255);
+    color: white;
+    margin-left: 10px;
+    width: 120px;
+    height: 40px;
+    font-size: 17px;
+    font-weight: 500;
+    border: 2px solid black;
+}
+.addtocard:focus{
+    outline:0;
+}
+
+
+
+.reviews{
+    width: 100%;
+    min-height: 700px;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6) ), url(https://burst.shopifycdn.com/photos/wrtiting-tools.jpg?width=1200&format=pjpg&exif=0&iptc=0);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.rev-statement{
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rev-statement h1{
+    color: #fff;
+    font-size: 55px;
+    font-family: Roboto;
+    margin-top: 30px
+}
+.rev-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.rev-cards > div{
+    background-color: #fff;
+    width: 350px;
+    height: 500px;
+    margin: 30px 30px;
+}
+.rev-cards img{
+    width: 130px;
+    height: 130px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    margin: 30px auto;
+}
+.rev-cards p{
+    margin: 10px 10px;
+    font-size: 20px;
+    font-family: Italic;
+    text-align: center;
+}
+.rev-cards h4{
+    color: red;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+
+
+
+
+
+.bottom{
+    color: white;
+    min-height: 600px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+.bottom-content{
+    max-width: 100%;
+    padding: 100px 100px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.bottom-content h5{
+    cursor: pointer;
+}
+.social-media{
+    position: relative;
+    text-align: center;
+    margin: 50px auto;
+}   
+.social-media hr{
+    position: relative;
+    background-color: white;
+    max-width: 1000px;
+}
+.social-media-icons img{
+    height: 40px;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+.copyright{
+    position: relative;
+    float: bottom;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 20px;
+}
+.copyright h6{
+    margin-bottom: 10px;
+    color: white
+}
+
+
+#up{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    font-size: 25px;
+    background: #ffb20c;
+    padding: 7px 10px;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s ease-in-out;
+    z-index: 1;
+  }
+  #up:hover{
+    transition: .5s;
+  }
+
+#menu-icon{
+    font-size: 35px;
+    display: none;
+}
+#toggle{
+    display: none;
+}
+@media (max-width: 500px){
+    #menu-icon{
+        position: relative;
+        padding-left: 10px;
+        color: white;
+        display: block;
+        cursor: pointer;
+        background-color: black;
+        margin: 0;
+    }
+    #notmylogo{
+        display: none;
+    }
+    #statement{
+        left: auto;
+        top: 160px;
+        margin-left: 30px;
+        width: 300px;
+        line-height: 60px;
+        font-size: 40px;
+    }
+
+    #search{
+        position: relative;
+        margin-left: -70px;
+        height: 40px;
+        max-width: 250px;
+    }
+    #searchbutton{
+        width: 80px;
+        margin-left: -60px;
+        height: 38px;
+    }
+    .bottom-content{
+        padding: 100px 30px 0px;
+    }
+    .main{
+        min-height: 400px;
+        background-position-x: -100px;
+    }
+    .header{
+        position: relative;
+        justify-content: center;
+        height: 400px;
+        display: none;
+        background-color: darkslategray;
+    }
+    
+    div.nav{
+        width: 100%;
+        margin-left: 0%;
+        position: relative;
+        text-align: center;
+        margin-top: 0%;
+        display: block;
+        font-size: 30px;
+        color: aliceblue;
+    }
+    .nav div{
+        padding-top: 10px;
+        position: relative;
+        justify-content: center;
+    }
+    #cart-icon{
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    div.logregbuttons{
+        position: relative;
+        margin-left: 100px;
+        margin-top: 20px;
+        width: 300px;
+    }
+
+    .about-image img{
+        width: 350px;
+        margin: 10px 10px 40px;
+    }
+    
+    .bottom-content h5{
+        font-size: 15px;
+    }
+    .copyright{
+        margin: 10px 10px
+    }
+    .copyright h6{
+        color: #fff;
+        font-size: 13px;
+        margin: 10px 15px;
+    }
+    #toggle:checked ~ .header{
+
+        display: block;
+    }
+}

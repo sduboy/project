@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\MailController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -15,4 +18,19 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('en', function () {
+    return view('main');
+})->name('en');
+
+Route::get('contact', function () {
+    return view('contact');
+})->name('contact');
+
+Route::get('contact/send', [MailController::class, 'send'])->name('contact/send');
+
+Route::get('/{lang}', function ($lang){
+    App::setlocale($lang);
+    return view('main');
 });
